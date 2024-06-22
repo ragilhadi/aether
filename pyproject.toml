@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "aether"
+version = "0.0.1"
+description = "Aether is a deep learning tools for computer vision"
+authors = ["ragilhadi <ragilhprasetyo@gmail.com>"]
+maintainers = ["ragilhadi <ragilhprasetyo@gmail.com>"]
+readme = "README.md"
+classifiers = [
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Programming Language :: Python :: 3.11",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+repository = "https://github.com/ragilhadi/aether/"
+
+
+[tool.poetry.dependencies]
+python = "^3.11"
+torch = "^2.3.1"
+torchvision = "^0.18.1"
+lightning = "^2.3.0"
+
+[tool.poetry.scripts]
+aether = "aether.cli:main"
+
+[tool.poetry.urls]
+"Source" = "https://github.com/ragilhadi/aether/"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
